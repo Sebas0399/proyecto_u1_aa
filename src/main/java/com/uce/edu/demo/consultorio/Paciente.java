@@ -1,5 +1,9 @@
 package com.uce.edu.demo.consultorio;
 
+import org.springframework.stereotype.Component;
+
+//Inversion de control
+@Component
 public class Paciente {
 	private String nombre;
 	public String getNombre() {
