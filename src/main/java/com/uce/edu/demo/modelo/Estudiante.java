@@ -1,6 +1,11 @@
 package com.uce.edu.demo.modelo;
 
 public class Estudiante {
+	@Override
+	public String toString() {
+		return "Estudiante [cedula=" + cedula + ", nombre=" + nombre + ", apellido=" + apellido + "]";
+	}
+
 	private String cedula;
 
 	public String getCedula() {
