@@ -12,4 +12,23 @@ public class TrasferenciaRepositoryImpl implements ITrasnferenciaRepository{
 		System.out.println("Transferencia insertada:"+t);
 	}
 
+	@Override
+	public Transferencia buscar(String cuentaOrigen, String cuentaDestino) {
+		// TODO Auto-generated method stub
+		System.out.println("Transferencia en contrada de: "+cuentaOrigen +"a "+cuentaDestino);
+		return null;
+	}
+
+	@Override
+	public void actualizar(Transferencia transferencia) {
+		// TODO Auto-generated method stub
+		System.out.println("Transferencia actualizada: "+transferencia);
+	}
+
+	@Override
+	public void eliminar(String cuentaOrigen, String cuentaDestino) {
+		// TODO Auto-generated method stub
+		System.out.println("Transferencia eliminada de: "+cuentaOrigen +"a "+cuentaDestino);
+	}
+
 }

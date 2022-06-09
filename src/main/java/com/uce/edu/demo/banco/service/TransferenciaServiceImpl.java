@@ -48,4 +48,30 @@ public class TransferenciaServiceImpl implements ITransferenciaService{
 		
 	}
 
+	@Override
+	public void actualizar(String ctaOrigen, String ctaDestino, BigDecimal monto) {
+		// TODO Auto-generated method stub
+		Transferencia t=new Transferencia();
+		t.setFechaTransferencia(LocalDateTime.now());
+		t.setMontoTransferir(monto);
+		t.setNumeroCuentaDestino(ctaDestino);
+		t.setNumeroCuentaOrigen(ctaOrigen);
+		this.iTransferenciaRepository.actualizar(t);
+	
+	
+	}
+
+	@Override
+	public void eliminar(String cuentaOrigen, String cuentaDestino, BigDecimal monto) {
+		// TODO Auto-generated method stub
+		this.iTransferenciaRepository.eliminar(cuentaOrigen, cuentaDestino);
+	}
+
+	@Override
+	public Transferencia buscar(String cuentaOrigen, String cuentaDestino, BigDecimal monto) {
+		return this.iTransferenciaRepository.buscar(cuentaOrigen, cuentaDestino);
+		// TODO Auto-generated method stub
+		
+	}
+
 }

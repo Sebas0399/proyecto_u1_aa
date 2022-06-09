@@ -9,9 +9,9 @@ import com.uce.edu.demo.banco.modelo.CuentaBancaria;
 public class CuentaBancariaRepositoryImpl implements ICuentaBancariaRepository {
 
 	@Override
-	public void actualizar(CuentaBancaria c) {
+	public void actualizar(CuentaBancaria cuenta) {
 		// TODO Auto-generated method stub
-		System.out.println("Cuenta bancaria actualizada a: "+c);
+		System.out.println("Cuenta bancaria actualizada a: "+cuenta);
 	}
 
 	@Override
@@ -22,6 +22,19 @@ public class CuentaBancariaRepositoryImpl implements ICuentaBancariaRepository {
 		cta.setNumero(numero);
 		cta.setSaldo(new BigDecimal(100));
 		return cta;
+	}
+
+	@Override
+	public void insertar(CuentaBancaria cuenta) {
+		// TODO Auto-generated method stub
+		System.out.println("Cuenta bancaria insertada en la base: "+cuenta);
+	}
+
+	@Override
+	public void eliminar(String numero) {
+		// TODO Auto-generated method stub
+		System.out.println("Cuenta bancaria eliminada de la base de numero: "+numero);
+		
 	}
 
 }

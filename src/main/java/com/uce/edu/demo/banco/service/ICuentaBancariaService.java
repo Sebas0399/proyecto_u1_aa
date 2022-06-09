@@ -5,4 +5,6 @@ import com.uce.edu.demo.banco.modelo.CuentaBancaria;
 public interface ICuentaBancariaService {
 	public void actualizar(CuentaBancaria c);
 	public CuentaBancaria buscar(String numero);
+	public void eliminar(String numero);
+	public void insertar(CuentaBancaria c);
 }
