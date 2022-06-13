@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 public class GestorInventarioTo {
 	private String nombre;
 	private int cantidad;
-	private BigDecimal precio;
+	private BigDecimal precioVenta;
 	private LocalDateTime fechaIngreso;
 	public String getNombre() {
 		return nombre;
@@ -21,10 +21,10 @@ public class GestorInventarioTo {
 		this.cantidad = cantidad;
 	}
 	public BigDecimal getPrecio() {
-		return precio;
+		return precioVenta;
 	}
-	public void setPrecio(BigDecimal precio) {
-		this.precio = precio;
+	public void setPrecio(BigDecimal precioVenta) {
+		this.precioVenta = precioVenta;
 	}
 	public LocalDateTime getFechaIngreso() {
 		return fechaIngreso;
@@ -34,7 +34,7 @@ public class GestorInventarioTo {
 	}
 	@Override
 	public String toString() {
-		return "GestorInventarioTo [nombre=" + nombre + ", cantidad=" + cantidad + ", precio=" + precio
+		return "[nombre=" + nombre + ", cantidad=" + cantidad + ", precio venta=" + precioVenta
 				+ ", fechaIngreso=" + fechaIngreso + "]";
 	}
 	

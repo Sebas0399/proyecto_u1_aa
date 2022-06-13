@@ -8,8 +8,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.uce.edu.demo.santa.repository.IInventarioRepository;
-import com.uce.edu.demo.santa.service.GestorInventarioImpl;
 import com.uce.edu.demo.santa.service.IGestorInventario;
 import com.uce.edu.demo.santa.service.IInventarioService;
 
@@ -19,7 +17,6 @@ public class ProyectoU1AaApplication implements CommandLineRunner {
 	
 	@Autowired
 	private IInventarioService inventarioService;
-	@Autowired GestorInventarioImpl gestor;
 	@Autowired
 	private IGestorInventario gestorService;
 	public static void main(String[] args) {

@@ -32,6 +32,7 @@ public class Inventario {
 		this.fechaIngreso = fechaIngreso;
 	}
 
+	
 	@Override
 	public String toString() {
 		return "Inventario [producto=" + producto + ", cantidad=" + cantidad + ", fechaIngreso=" + fechaIngreso + "]";

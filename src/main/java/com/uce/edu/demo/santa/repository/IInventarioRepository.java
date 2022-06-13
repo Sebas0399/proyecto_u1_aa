@@ -9,9 +9,9 @@ import com.uce.edu.demo.santa.modelo.Inventario;
 public interface IInventarioRepository {
 	//CRUD
 	public void insertar (Inventario inventario);
-	public Transferencia buscar(String codigo);
+	public Inventario buscar(String codigo);
 	public void actualizar(Inventario transferencia);
-	public void eliminar(String cuentaOrigen,String cuentaDestino);
+	public void eliminar(String codigo);
 	
 	public List<Inventario> consultar(LocalDateTime fecha);
 }

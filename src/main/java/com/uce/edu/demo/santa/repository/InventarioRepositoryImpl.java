@@ -19,21 +19,22 @@ public class InventarioRepositoryImpl implements IInventarioRepository{
 	}
 
 	@Override
-	public Transferencia buscar(String codigo) {
+	public Inventario buscar(String codigo) {
 		// TODO Auto-generated method stub
+		System.out.println("Inventario enntrado con el codigo: "+ codigo);
 		return null;
 	}
 
 	@Override
-	public void actualizar(Inventario transferencia) {
+	public void actualizar(Inventario inventario) {
 		// TODO Auto-generated method stub
-		
+		System.out.println("Se ha actualizado el inventario: "+ inventario);
 	}
 
 	@Override
-	public void eliminar(String cuentaOrigen, String cuentaDestino) {
+	public void eliminar(String codigo) {
 		// TODO Auto-generated method stub
-		
+		System.out.println("Se ha eliminado el inventario con codigo: "+ codigo);
 	}
 	public List<Inventario> consultar(LocalDateTime fecha){
 		
