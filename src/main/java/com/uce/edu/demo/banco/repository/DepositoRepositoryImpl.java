@@ -8,8 +8,6 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 
 import com.uce.edu.demo.banco.modelo.Deposito;
-import com.uce.edu.demo.banco.modelo.Retiro;
-import com.uce.edu.demo.banco.modelo.Transferencia;
 
 @Repository
 public class DepositoRepositoryImpl implements IDepositoRepository {
