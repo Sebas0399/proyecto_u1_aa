@@ -9,6 +9,8 @@ import com.uce.edu.demo.repository.IMateriaRepository;
 public class MateriaServiceImpl implements IMateriaService{
 	@Autowired
 	private IMateriaRepository materiaRepo;
+	
+	
 	@Override
 	public void ingrersarMateria(Materia m) {
 		// TODO Auto-generated method stub
